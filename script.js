@@ -25,11 +25,11 @@ var Movie = React.createClass({
     data: React.PropTypes.object.isRequired,
 
   },
-  render: function () { /*wylogować propsy*/
+  render: function () {
     return React.createElement('li', {},
-      React.createElement('h2', {}, this.prop.data.title),
-      React.createElement('p', {}, this.prop.data.desc),
-      React.createElement('img', {src: this.prop.data.poster}))
+      React.createElement('h2', {}, this.props.data.title),
+      React.createElement('p', {}, this.props.data.desc),
+      React.createElement('img', {src: this.props.data.poster}))
   }
 });
 
